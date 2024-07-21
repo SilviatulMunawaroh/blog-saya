@@ -10,35 +10,44 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ADFFBD;
             color: #333;
         }
 
         .navbar {
             background-color: #ffdead;
-            padding: 15px;
+            padding: 50px 10px; 
             position: fixed;
             width: 100%;
-            top: 10px;
+            top: 0;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
         }
 
         .navbar h1 {
             margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 10px; 
+            left: 20px;
+            font-size: 2.5em;
         }
 
         .navbar-links {
-            background-color: #d3d3d3;
-            padding: 10px;
-            text-align: left;
-            margin-top: 10px;
-            border-radius: 5px;
+            background-color: #DCEFFF;
+            padding: 10px 0; 
+            position: absolute; 
+            top: 80px;
+            left: 0;
+            right: 0;
+            width: 100%; 
+            box-sizing: border-box; 
         }
 
         .navbar-links a {
-            margin-right: 15px;
-            color: #000;
+            margin: 0;
+            color: black; 
             text-decoration: none;
         }
 
@@ -49,7 +58,7 @@
         .container {
             width: 80%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 120px 20px 20px; 
         }
 
         .header {
@@ -122,8 +131,6 @@
             background-color: #218838;
         }
 
-
-
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -150,6 +157,28 @@
                 margin: 0;
             }
         }
+
+        footer {
+            text-align: center;
+        }
+
+        footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer p {
+            background-color: #9ACFBF;
+            margin: 0; 
+            padding: 15px 20px;
+        }
+
+        .footer .footer-links {
+            background-color: #DCEFFF;
+            margin: 0;
+            padding: 5px 20px;
+        }
     </style>
 </head>
 <body>
@@ -158,9 +187,10 @@
             <h1>Silvi Blog!</h1>
         </div>
         <div class="navbar-links">
-            <a href="biografi.html">Biografi |</a>
-            <a href="catatan.html">Catatan |</a>
-            <a href="galeri.html">Galeri |</a>
+            <a href="index.html">Home |</a>
+            <a href="biografi.html">Biography |</a>
+            <a href="catatan.html">Notes |</a>
+            <a href="galeri.html">Gallery |</a>
             <a href="contact.html">Contact Us</a>
         </div>
     </nav>
@@ -168,6 +198,9 @@
     <div class="container">
         <section class="contact" id="contact">
             <h1>Contact Me</h1>
+            <div class="contact-content">
+                <p>If you have any questions, suggestions, or would like to collaborate, feel free to contact me using the form below or through my social media channels.</p>
+            </div>
             <div class="row">
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -187,12 +220,14 @@
             </div>
         </section>
     </div>
-    <footer class="footer" style="display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #d3d3d3;">
-        <p style="margin: 0 20px 0 0;">&copy; 2024 SilviatulMunawaroh.</p>
-        <a href="index.html" style="margin: 0 10px;">Home</a> 
-        <a href="about.html" style="margin: 0 10px;">About</a> 
-        <a href="terms.html" style="margin: 0 10px;">Terms of Service</a> 
-        <a href="privacy.html" style="margin: 0 0 0 10px;">Privacy</a>
+    <footer class="footer">
+        <p>&copy; 2024 SilviatulMunawaroh.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy</a>
+        </div>
     </footer>
     
 </body>

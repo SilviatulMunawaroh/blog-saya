@@ -3,42 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catatan</title>
+    <title>Notes</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ADFFBD;
             color: #333;
         }
 
         .navbar {
             background-color: #ffdead;
-            padding: 15px;
+            padding: 50px 10px; 
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
         }
 
         .navbar h1 {
             margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 10px; 
+            left: 20px;
+            font-size: 2.5em; 
         }
 
         .navbar-links {
-            background-color: #d3d3d3;
-            padding: 10px;
-            text-align: left;
-            margin-top: 10px;
-            border-radius: 5px;
+            background-color: #DCEFFF;
+            padding: 10px 0; 
+            position: absolute; 
+            top: 80px;
+            left: 0;
+            right: 0;
+            width: 100%; 
+            box-sizing: border-box; 
         }
 
         .navbar-links a {
-            margin-right: 15px;
-            color: #000;
+            margin: 0;
+            color: black; 
             text-decoration: none;
         }
 
@@ -49,7 +58,7 @@
         .container {
             width: 80%;
             margin: 0 auto;
-            padding: 100px 20px 20px;
+            padding: 120px 20px 20px; 
         }
 
         .header {
@@ -80,12 +89,24 @@
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #d3d3d3;
         }
 
-        footer p {
+        footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer p {
+            background-color: #9ACFBF;
+            margin: 0; 
+            padding: 15px 20px;
+        }
+
+        .footer .footer-links {
+            background-color: #DCEFFF;
             margin: 0;
+            padding: 5px 20px;
         }
     </style>
 </head>
@@ -95,35 +116,38 @@
             <h1>Silvi Blog!</h1>
         </div>
         <div class="navbar-links">
-            <a href="biografi.html">Biografi</a> |
-            <a href="catatan.html">Catatan</a> |
-            <a href="galeri.html">Galeri</a> |
+            <a href="index.html">Home</a> |
+            <a href="biografi.html">Biography</a> |
+            <a href="catatan.html">Notes</a> |
+            <a href="galeri.html">Gallery</a> |
             <a href="contact.html">Contact Us</a>
         </div>
     </nav>
 
-    <div class="container" id="catatan">
-        <h1>Catatan Impian: Menjadi Programmer</h1>
+    <div class="container" id="notes">
+        <h1>Dream Notes: Becoming a Programmer</h1>
         <div class="content">
-            <h2>Impian Menjadi Programmer</h2>
-            <p>Saya, Silviatul Munawaroh, adalah seorang mahasiswa Universitas Nurul Jadid, jurusan Teknik Informatika. Impian saya adalah menjadi seorang programmer yang dapat menciptakan solusi teknologi yang inovatif dan bermanfaat bagi masyarakat. Saya akan memulai dengan belajar dasar-dasar pemrograman seperti HTML, CSS, dan JavaScript untuk membangun fondasi yang kuat. Setelah memahami dasar-dasar, saya akan fokus pada pengembangan keterampilan di bidang backend dan frontend development. Melibatkan diri dalam proyek-proyek praktis akan membantu saya menerapkan pengetahuan saya dan memahami tantangan nyata dalam pemrograman. Di dunia teknologi yang terus berkembang, saya akan terus memperbarui pengetahuan saya dengan mengikuti kursus, membaca buku, dan berpartisipasi dalam komunitas developer.</p>
-            <p>Memiliki keterampilan pemrograman yang baik tidak hanya memberikan saya kemampuan untuk membuat aplikasi dan situs web, tetapi juga membantu saya memahami bagaimana teknologi dapat digunakan untuk memecahkan masalah sehari-hari. Misalnya, dengan pemrograman, saya bisa membuat alat yang dapat mengotomatisasi tugas-tugas rutin, yang akan menghemat waktu dan tenaga.</p>
-            <p>Saya juga berencana untuk mengeksplorasi berbagai bahasa pemrograman seperti Python, Java, dan C++ agar dapat memiliki pemahaman yang luas tentang dunia pemrograman. Setiap bahasa memiliki kekuatan dan kelemahan tersendiri, dan dengan menguasai beberapa bahasa, saya dapat memilih alat yang paling tepat untuk setiap proyek yang saya kerjakan.</p>
-            <p>Selain keterampilan teknis, saya juga akan fokus pada pengembangan soft skills seperti manajemen waktu, komunikasi, dan kerja sama tim. Kemampuan untuk bekerja dengan orang lain dan mengelola proyek secara efisien adalah keterampilan yang sangat penting dalam dunia kerja, terutama dalam industri teknologi yang sering melibatkan kolaborasi tim yang intens.</p>
-            <p>Saya juga akan mencari mentor dan bergabung dengan komunitas pemrograman untuk mendapatkan bimbingan dan inspirasi. Belajar dari pengalaman orang lain yang telah sukses di bidang ini akan sangat berharga dan dapat mempercepat perjalanan saya menuju tujuan saya. Mentor dapat memberikan wawasan yang berharga, membantu saya menghindari kesalahan umum, dan memberikan motivasi saat menghadapi tantangan.</p>
-            <p>Dalam jangka panjang, saya berharap dapat berkontribusi pada proyek-proyek open-source dan mungkin suatu hari nanti memimpin tim pengembangan saya sendiri. Dengan berkontribusi pada proyek open-source, saya tidak hanya dapat memberikan kembali kepada komunitas tetapi juga mendapatkan pengalaman berharga dan pengakuan dari rekan-rekan profesional di bidang ini.</p>
-            <p>Untuk mencapai semua ini, saya menyadari bahwa konsistensi dan ketekunan adalah kunci. Tidak ada jalan pintas untuk menjadi seorang programmer yang handal; itu membutuhkan dedikasi, praktik terus-menerus, dan keinginan untuk terus belajar dan beradaptasi dengan teknologi baru. Saya berkomitmen untuk terus mendorong diri saya dan tidak menyerah, tidak peduli seberapa sulit tantangannya.</p>
-            <p>Saya juga berencana untuk menghadiri konferensi dan seminar teknologi untuk tetap up-to-date dengan tren dan perkembangan terbaru di dunia pemrograman. Menghadiri acara semacam ini akan memberikan kesempatan untuk belajar dari para ahli, mendapatkan wawasan baru, dan jaringan dengan profesional lain di industri ini.</p>
-            <p>Secara keseluruhan, impian saya untuk menjadi seorang programmer adalah perjalanan yang menantang namun memuaskan. Saya siap untuk menghadapi setiap tantangan yang datang dan terus belajar sepanjang jalan. Dengan tekad yang kuat dan sumber daya yang tepat, saya yakin bahwa saya dapat mencapai tujuan saya dan membuat dampak positif di dunia teknologi.</p>
+            <h2>Dream of Becoming a Programmer</h2>
+            <p>I, Silviatul Munawaroh, am a student at Universitas Nurul Jadid, majoring in Informatics Engineering. My dream is to become a programmer who can create innovative and useful technology solutions for society. I will start by learning the basics of programming such as HTML, CSS, and JavaScript to build a strong foundation. After mastering the basics, I will focus on developing skills in backend and frontend development. Engaging in practical projects will help me apply my knowledge and understand real challenges in programming. In the ever-evolving tech world, I will keep updating my knowledge by taking courses, reading books, and participating in developer communities.</p>
+            <p>Having strong programming skills not only allows me to create applications and websites but also helps me understand how technology can be used to solve everyday problems. For example, with programming, I can create tools that automate routine tasks, saving time and effort.</p>
+            <p>I also plan to explore various programming languages such as Python, Java, and C++ to gain a broad understanding of the programming world. Each language has its own strengths and weaknesses, and by mastering multiple languages, I can choose the most appropriate tool for each project I work on.</p>
+            <p>Besides technical skills, I will also focus on developing soft skills such as time management, communication, and teamwork. The ability to work with others and manage projects efficiently is crucial in the workforce, especially in the tech industry which often involves intense team collaboration.</p>
+            <p>I will also seek mentors and join programming communities for guidance and inspiration. Learning from others who have succeeded in this field will be invaluable and can accelerate my journey toward my goals. Mentors can provide valuable insights, help me avoid common mistakes, and offer motivation when facing challenges.</p>
+            <p>In the long run, I hope to contribute to open-source projects and perhaps one day lead my own development team. By contributing to open-source projects, I can give back to the community and gain valuable experience and recognition from peers in the field.</p>
+            <p>To achieve all of this, I understand that consistency and perseverance are key. There are no shortcuts to becoming a skilled programmer; it requires dedication, continuous practice, and a desire to keep learning and adapting to new technologies. I am committed to pushing myself and not giving up, no matter how challenging the obstacles may be.</p>
+            <p>I also plan to attend tech conferences and seminars to stay up-to-date with the latest trends and developments in programming. Attending such events will provide opportunities to learn from experts, gain new insights, and network with other professionals in the industry.</p>
+            <p>Overall, my dream of becoming a programmer is a challenging but rewarding journey. I am ready to face every challenge that comes my way and continue learning along the path. With strong determination and the right resources, I am confident that I can achieve my goals and make a positive impact in the world of technology.</p>
         </div>
     </div>
 
-    <footer class="footer" style="display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #d3d3d3;">
-        <p style="margin: 0 20px 0 0;">&copy; 2024 Silviatul Munawaroh.</p>
-        <a href="index.html" style="margin: 0 10px;">Home</a> 
-        <a href="about.html" style="margin: 0 10px;">About</a> 
-        <a href="terms.html" style="margin: 0 10px;">Terms of Service</a> 
-        <a href="privacy.html" style="margin: 0 0 0 10px;">Privacy</a>
+    <footer class="footer">
+        <p>&copy; 2024 SilviatulMunawaroh.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy</a>
+        </div>
     </footer>
 </body>
 </html>

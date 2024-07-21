@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri</title>
+    <title>Gallery</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ADFFBD;
             color: #333;
+        }
+
+        .navbar {
+            background-color: #ffdead;
+            padding: 50px 10px; 
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 10px; /* Adjust distance from the top */
+            left: 20px; /* Adjust distance from the left */
+            font-size: 2.5em;
+        }
+
+        .navbar-links {
+            background-color: #DCEFFF;
+            padding: 10px 0; 
+            position: absolute; 
+            top: 80px;
+            left: 0;
+            right: 0;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        .navbar-links a {
+            margin: 0;
+            color: black; 
+            text-decoration: none;
+        }
+
+        .navbar-links a:hover {
+            text-decoration: underline;
         }
 
         .container {
             width: 80%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 120px 20px 20px; 
         }
 
         .header {
@@ -64,46 +105,13 @@
             color: #333;
         }
 
-        h1#galeri {
-            margin-top: 100px; /* Add margin to the top of the h1 with id galeri */
+        h1#gallery {
+            margin-top: 30px; /* Add margin to the top of the h1 with id gallery */
         }
 
         .image-container {
             text-align: center;
             margin-bottom: 20px;
-        }
-
-        .navbar {
-            background-color: #ffdead;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar h1 {
-            margin: 0;
-        }
-
-        .navbar-links {
-            background-color: #d3d3d3;
-            padding: 10px;
-            text-align: left;
-            margin-top: 10px;
-            border-radius: 5px;
-            margin-left: ;
-        }
-
-        .navbar-links a {
-            margin-right: 15px;
-            color: #000;
-            text-decoration: none;
-        }
-
-        .navbar-links a:hover {
-            text-decoration: underline;
         }
 
         .content {
@@ -114,6 +122,28 @@
             padding: 10px;
         }
 
+        footer {
+            text-align: center;
+        }
+
+        footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer p {
+            background-color: #9ACFBF;
+            margin: 0; 
+            padding: 15px 20px;
+        }
+
+        .footer .footer-links {
+            background-color: #DCEFFF;
+            margin: 0;
+            padding: 5px 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -122,49 +152,52 @@
             <h1>Silvi Blog!</h1>
         </div>
         <div class="navbar-links">
-            <a href="biografi.html">Biografi</a> |
-            <a href="catatan.html">Catatan</a> |
-            <a href="galeri.html">Galeri</a> |
+            <a href="index.html">Home</a> |
+            <a href="biografi.html">Biography</a> |
+            <a href="catatan.html">Notes</a> |
+            <a href="galeri.html">Gallery</a> |
             <a href="contact.html">Contact Us</a>
         </div>
     </nav>
 
-    <div class="container" id="galeri">
-        <h1 id="galeri">Galeri Project Saya</h1>
+    <div class="container" id="gallery">
+        <h1 id="gallery">My Project Gallery</h1>
         <div class="gallery">
             <div class="image-item">
-                <img src="img/project/kedai kopi.jpg" alt="web kedai kopi">
-                <p>Web Kedai Kopi</p>
+                <img src="img/project/kedai kopi.jpg" alt="coffee shop website">
+                <p>Coffee Shop Website</p>
             </div>
             <div class="image-item">
-                <img src="img/project/Annotation 2024-04-29 125837.jpg" alt="web penjualan">
-                <p>Web Penjualan</p>
+                <img src="img/project/Annotation 2024-04-29 125837.jpg" alt="sales website">
+                <p>Sales Website</p>
             </div>
             <div class="image-item">
-                <img src="img/project/undangan.jpg" alt="web undangan online">
-                <p>Web Undangan Online</p>
+                <img src="img/project/undangan.jpg" alt="online invitation website">
+                <p>Online Invitation Website</p>
             </div>
             <div class="image-item">
-                <img src="img/project/CRUD.jpg" alt="crud">
-                <p>CRUD</p>
+                <img src="img/project/CRUD.jpg" alt="CRUD application">
+                <p>CRUD Application</p>
             </div>
             <div class="image-item">
-                <img src="img/project/Design Apk .jpg" alt="design apk">
-                <p>Design Apk</p>
+                <img src="img/project/Design Apk .jpg" alt="APK design">
+                <p>APK Design</p>
             </div>
             <div class="image-item">
-                <img src="img/project/Design Web Travel.jpg" alt="design web travel">
-                <p>Design Web Travel</p>
+                <img src="img/project/Design Web Travel.jpg" alt="travel website design">
+                <p>Travel Website Design</p>
             </div>
         </div>
     </div>
 
-    <footer class="footer" style="display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #d3d3d3;">
-        <p style="margin: 0 20px 0 0;">&copy; 2024 SilviatulMunawaroh.</p>
-        <a href="index.html" style="margin: 0 10px;">Home</a> 
-        <a href="about.html" style="margin: 0 10px;">About</a> 
-        <a href="terms.html" style="margin: 0 10px;">Terms of Service</a> 
-        <a href="privacy.html" style="margin: 0 0 0 10px;">Privacy</a>
+    <footer class="footer">
+        <p>&copy; 2024 SilviatulMunawaroh.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy</a>
+        </div>
     </footer>
 
 </body>
