@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffdead;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .navbar-links {
+            background-color: #d3d3d3;
+            padding: 10px;
+            text-align: left;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .navbar-links a {
+            margin-right: 15px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 100px 20px 20px;
+        }
+
+        .bio-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .bio-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .bio-content {
+            flex: 2;
+            min-width: 250px;
+            padding: 20px;
+        }
+
+        .bio-content h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <h1>Silvi Blog!</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="biografi.html">Biografi</a> |
+            <a href="catatan.html">Catatan</a> |
+            <a href="galeri.html">Galeri</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="bio-section" id="biografi">
+        <div class="container">
+            <h1>Biografi</h1>
+            <div class="bio-image">
+                <img src="img/silvi.jpg" alt="Silviatul Munawaroh" width="200" height="200">
+            </div>
+            <div class="bio-content">
+                <h2>Tentang Saya</h2>
+                <p>Saya seorang Pengembang Web yang berkomitmen terhadap inovasi kreatif dalam dunia digital. Saat ini, saya sedang mengejar gelar sarjana di bidang Teknik Informatika Universitas Nurul Jadid, tempat saya terus meningkatkan keterampilan teknis dan nilai saya dalam setiap proyek yang saya buat.</p>
+                <h2>Pendidikan</h2>
+                <ul>
+                    <li>SDN Alaskandang 1</li>
+                    <li>SMPN 1 Besuk</li>
+                    <li>SMKN 2 Kraksaan</li>
+                    <li>Universitas Nurul Jadid</li>
+                </ul>
+                <h2>Pengalaman</h2>
+                <ul>
+                    <li>Anggota Redaksi (2019 - 2021)</li>
+                    <li>Anggota DPM-FT (2023 - Sekarang)</li>
+                </ul>
+                <h2>Kemampuan</h2>
+                <ul>
+                    <li>Bahasa Pemrograman: Python, JavaScript, C++</li>
+                    <li>Pengembangan Web: HTML, CSS, JavaScript, React</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #d3d3d3;">
+        <p style="margin: 0 20px 0 0;">&copy; 2024 SilviatulMunawaroh.</p>
+        <a href="index.html" style="margin: 0 10px;">Home</a> 
+        <a href="about.html" style="margin: 0 10px;">About</a> 
+        <a href="terms.html" style="margin: 0 10px;">Terms of Service</a> 
+        <a href="privacy.html" style="margin: 0 0 0 10px;">Privacy</a>
+    </footer>
+</body>
+</html>
